@@ -45,6 +45,13 @@ export default function PillBottleMessages() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-purple-100">
       
+      <div className="absolute top-0 left-0 right-0 h-12  flex items-center justify-center text-2xl">
+        <br></br>
+        <br></br>
+        <br></br>
+          Pills Prescription ❤️
+        </div>
+
       <motion.div
         className="relative w-40 h-64 bg-blue-200 rounded-full overflow-hidden cursor-pointer"
         style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.1)' }}
