@@ -44,18 +44,22 @@ export default function PillBottleMessages() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-purple-100">
+      
       <motion.div
         className="relative w-40 h-64 bg-blue-200 rounded-full overflow-hidden cursor-pointer"
         style={{ boxShadow: '0 0 20px rgba(0, 0, 0, 0.1)' }}
         animate={controls}
         onClick={takePill}
       >
-        <div className="absolute top-0 left-0 right-0 h-12 bg-blue-300 rounded-t-full"></div>
+        
+        <div className="absolute top-0 left-0 right-0 h-12 bg-blue-300 rounded-t-full flex items-center justify-center text-2xl">
+          😊
+        </div>
         <div className="absolute bottom-4 left-4 right-4 top-16 bg-blue-100 rounded-b-full overflow-hidden">
           {[...Array(10)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute w-4 h-2 bg-red-400 rounded-full"
+              className="absolute w-4 h-2 bg-blue-400 rounded-full"
               style={{
                 top: `${Math.random() * 80 + 10}%`,
                 left: `${Math.random() * 80 + 10}%`,
